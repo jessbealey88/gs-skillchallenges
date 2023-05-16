@@ -37,7 +37,7 @@ RSpec.describe DiaryEntry do
 
     describe "@reading_chunk" do
         context "with a contents readable within the given minutes" do
-            it "returns teh full contents" do
+            it "returns the full contents" do
                 diary_entry = DiaryEntry.new("my_title", "one two three")
                 expect(diary_entry.reading_chunk(200, 1)).to eq "one two three"
             end
